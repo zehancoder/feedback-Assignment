@@ -1,0 +1,284 @@
+{
+  "navberTwo": [
+    {
+      "img": "/homePageImage/icons/All.png",
+      "Text": "All"
+    },
+    {
+      "img": "/homePageImage/icons/Restaurants.png",
+      "Text": "Restaurants"
+    },
+    {
+      "img": "/homePageImage/icons/Hotels.png",
+      "Text": "Hotels"
+    },
+    {
+      "img": "/homePageImage/icons/HomeServices.png",
+      "Text": "Home Services"
+    },
+    {
+      "img": "/homePageImage/icons/Shopping.png",
+      "Text": "Shopping"
+    },
+    {
+      "img": "/homePageImage/icons/Car.png",
+      "Text": "Car location"
+    },
+    {
+      "img": "/homePageImage/icons/Beauty.png",
+      "Text": "Beauty & Spa"
+    },
+    {
+      "img": "/homePageImage/icons/Park.png",
+      "Text": "Park"
+    },
+    {
+      "img": "/homePageImage/icons/Museum.png",
+      "Text": "Museum"
+    },
+    {
+      "img": "/homePageImage/icons/CarWash.png",
+      "Text": "Car wash"
+    },
+    {
+      "img": "/homePageImage/icons/Bars.png",
+      "Text": "Bars"
+    },
+    {
+      "img": "/homePageImage/icons/Gyms.png",
+      "Text": "Gyms"
+    }
+  ],
+  "CaruselCard": [
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou1.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou2.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou3.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou4.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou1.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou2.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou3.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/bestResCarousel/bestCarou4.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    }
+  ],
+  "trendsCard": [
+    {
+      "img": "/homePageImage/treandResImages/trends1.png",
+      "heading": "Bella Italia",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "4.8",
+      "review": "(34 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends2.png",
+      "heading": "Little Shucker",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "rating": "5.0",
+      "review": "(253 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends3.png",
+      "heading": "Marafuku Ramen",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(2).png",
+      "rating": "3.5",
+      "review": "(87 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends4.png",
+      "heading": "Bottega",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends5.png",
+      "heading": "Arabia Nights",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(4).png",
+      "rating": "3.5",
+      "review": "(334 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends6.png",
+      "heading": "Lokma",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "rating": "5.0",
+      "review": "(253 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends7.png",
+      "heading": "The snug",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(2).png",
+      "rating": "4.5",
+      "review": "(654 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends8.png",
+      "heading": "Starbelly",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "rating": "5",
+      "review": "(876 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends9.png",
+      "heading": "Iori",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(4).png",
+      "rating": "3.5",
+      "review": "(334 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends10.png",
+      "heading": "Ngalley",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "rating": "5",
+      "review": "(253 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends11.png",
+      "heading": "Diogonal",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "4.5",
+      "review": "(654 reviews)"
+    },
+    {
+      "img": "/homePageImage/treandResImages/trends12.png",
+      "heading": "Kitoko",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "rating": "5.0",
+      "review": "(876 reviews)"
+    }
+  ],
+  "activitiesCard": [
+    {
+        "userImg": "/icons/user.png",
+        "name": "Leslie sakho",
+        "location": "Canada, toronto",
+        "stars": "/homePageImage/stars/stars(3).png",
+        "date": "09/11/2023",
+        "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+        "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+        "images": [
+            "/homePageImage/activityImages/ac1.png",
+            "/homePageImage/activityImages/ac2.png",
+            "/homePageImage/activityImages/ac3.png"
+        ],
+        "discover": "Discover"
+    },
+    {
+        "userImg": "/icons/user.png",
+        "name": "Chris macari",
+        "location": "Singapour",
+        "stars": "/homePageImage/stars/stars(3).png",
+        "date": "14/09/2023",
+        "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+        "textTwo": "The lorem ipsum is, in printing.",
+        "images": [
+            "/homePageImage/activityImages/ac4.png",
+            "/homePageImage/activityImages/ac5.png",
+            "/homePageImage/activityImages/ac6.png"
+        ],
+        "discover": "Discover"
+    },
+    {
+        "userImg": "/icons/user.png",
+        "name": "Jojo alba",
+        "location": "Kuala lumpur",
+        "stars": "/homePageImage/stars/stars(3).png",
+        "date": "28/09/2023",
+        "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+        "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+        "images": [
+            "/homePageImage/activityImages/ac7.png",
+            "/homePageImage/activityImages/ac8.png",
+            "/homePageImage/activityImages/ac9.png"
+        ],
+        "discover": "Discover"
+    }
+  ],
+  "footer": [
+    {
+        "about": [
+            "About MyFeedback",
+            "Investor Relations"
+        ]
+    },
+    {
+        "myFeedback": [
+            "MyFeedback for business",
+            "Collections",
+            "Task",
+            "Events",
+            "MyFeedback blog",
+            "Support",
+            "Developers"
+        ],
+        "langauges": ["English", "Bangla", "Spanish", "Arabic", "Turkie"],
+        "Countries": ["Bangladesh", "Pakistan", "Turkey", "Saudi Arabia", "America"]
+    }
+  ]
+}
