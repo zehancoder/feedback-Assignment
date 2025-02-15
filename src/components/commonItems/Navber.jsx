@@ -36,7 +36,7 @@ export const Navber = () => {
             <TbWorld className="h-9 w-9 cursor-pointer"/>
             <Button className="text-white text-xs lg:text-[15.5px] leading-[18.16px] bg-darkBlack rounded-full cursor-pointer py-3 lg:py-6 px-4 lg:px-8 tracking-wider">MyFeedback for business</Button>
           </div>
-          <div className="text-3xl px-2 py-2 cursor-pointer rounded-full mx-6 transition  hover:bg-normalGray block lg:hidden" onClick={toggleMenu}>
+          <div className="text-3xl px-2 py-2 cursor-pointer rounded-full mx-3 transition  hover:bg-normalGray block lg:hidden" onClick={toggleMenu}>
             <CgMenu/>
           </div>
         </div>

@@ -11,9 +11,9 @@ export const ToggleNav = ({menuOpen, setMenuOpen}) => {
     }
   return (
     <>
-      <div className={`fixed top-0 h-full transition-all duration-200  ${menuOpen ? `left-0` : `-left-[200%]`}`}>
+      <div className={`fixed font-roboto top-0 h-full transition-all duration-200  ${menuOpen ? `left-0` : `-left-[200%]`}`}>
         <div className="max-w-96 h-full bg-normalBlack opacity-85 relative p-4 py-12">
-        <div className=" px-2 flex items-center justify-between flex-wrap gap-3">
+        <div className=" px-2 flex items-center justify-between flex-wrap gap-3 font-roboto">
           {myData.navberTwo.map(({Text, img, link}, i) => (
             <NavLink key={i} to={link} className={"text-center text-white py-2 font-medium space-y-2"} onClick={menuClose}>
                 <img src={img} alt="" className="mx-auto w-5"/>
