@@ -7,6 +7,11 @@
     --color-normalGray: #F2F2F2;
     --color-darkGray: #8F8F8F;
     --color-whiteGray: #F8F8F8;
+    --color-grays: #AFAFAF;
     --font-lexend: "Lexend", serif;
     --font-roboto: "Roboto", serif;
+}
+.active{
+    color: #1677BD;
+    border-bottom: 2px solid #1677BD;
 }

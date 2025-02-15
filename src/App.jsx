@@ -1,18 +1,22 @@
-import './App.css'
-import { Navber } from './components/commonItems/Navber'
-import {HeroUIProvider} from "@heroui/react";
-import { ToggleNav } from './components/commonItems/NavToggle';
+import "./App.css";
+import { Navber } from "./components/commonItems/Navber";
+import { HeroUIProvider } from "@heroui/react";
+import { ToggleNav } from "./components/commonItems/NavToggle";
+import { LinksItem } from "./components/Links";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-      <HeroUIProvider>
-        <Navber/>
-        <ToggleNav/>
-      </HeroUIProvider>
+      <BrowserRouter>
+        <HeroUIProvider>
+          <Navber />
+          <ToggleNav />
+          <LinksItem />
+        </HeroUIProvider>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

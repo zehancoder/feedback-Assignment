@@ -2,51 +2,63 @@
   "navberTwo": [
     {
       "img": "/homePageImage/icons/All.png",
-      "Text": "All"
+      "Text": "All",
+      "link": "/All"
     },
     {
-      "img": "/homePageImage/icons/Restaurants.png",
-      "Text": "Restaurants"
+      "img": "/homePageImage/icons/Resturents.png",
+      "Text": "Restaurants",
+      "link": "/"
     },
     {
       "img": "/homePageImage/icons/Hotels.png",
-      "Text": "Hotels"
+      "Text": "Hotels",
+      "link": "/Hotels"
     },
     {
       "img": "/homePageImage/icons/HomeServices.png",
-      "Text": "Home Services"
+      "Text": "Home Services",
+      "link": "/HomeServices"
     },
     {
       "img": "/homePageImage/icons/Shopping.png",
-      "Text": "Shopping"
+      "Text": "Shopping",
+      "link": "/Shopping"
     },
     {
       "img": "/homePageImage/icons/Car.png",
-      "Text": "Car location"
+      "Text": "Car location",
+      "link": "/Car"
     },
     {
       "img": "/homePageImage/icons/Beauty.png",
-      "Text": "Beauty & Spa"
+      "Text": "Beauty & Spa",
+      "link": "/Beauty"
     },
     {
       "img": "/homePageImage/icons/Park.png",
-      "Text": "Park"
+      "Text": "Park",
+      "link": "/Park"
     },
     {
       "img": "/homePageImage/icons/Museum.png",
-      "Text": "Museum"
+      "Text": "Museum",
+      "link": "/Museum"
     },
     {
       "img": "/homePageImage/icons/CarWash.png",
-      "Text": "Car wash"
+      "Text": "Car wash",
+      "link": "CarWash"
     },
     {
       "img": "/homePageImage/icons/Bars.png",
-      "Text": "Bars"
+      "Text": "Bars",
+      "link": "/Bars"
     },
     {
       "img": "/homePageImage/icons/Gyms.png",
-      "Text": "Gyms"
+      "Text": "Gyms",
+      "link": "/Gyms"
     }
   ],
   "CaruselCard": [

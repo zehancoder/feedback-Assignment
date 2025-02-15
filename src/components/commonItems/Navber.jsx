@@ -14,7 +14,7 @@ export const Navber = () => {
   return (
     <>
       <Contain className={"relative px-2"}>
-        <div className="flex items-center justify-between py-4 pt-6 font-roboto px-3 lg:px-2 2xl:px-1 fixed  w-[100%] 2xl:w-[80%] mx-auto">
+        <div className="flex items-center justify-between py-4 pt-6 font-roboto px-3 lg:px-2 2xl:px-1 fixed  w-[100%] 2xl:w-[1420px]  mx-auto">
           <img src="/homePageImage/Logo.png" alt=""  className="cursor-pointer"/>
           <div className="py-1 pl-3 pr-1 rounded-full hidden lg:flex ml-2 md:text-base text-xs lg:w-[40%] items-center justify-between border border-[#ADADAD]">
             <input
@@ -46,9 +46,6 @@ export const Navber = () => {
 
       </div>
       <ToggleNav menuOpen={menuOpen} setMenuOpen = {setMenuOpen}/>
-      <div className={`h-[2000px] bg-red-500`}>
-
-      </div>
     </>
   );
 };
