@@ -3,20 +3,20 @@ import { Navber } from "./components/commonItems/Navber";
 import { HeroUIProvider } from "@heroui/react";
 import { ToggleNav } from "./components/commonItems/NavToggle";
 import { LinksItem } from "./components/Links";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HeadingOne } from "./components/commonItems/Title";
 import { Cards } from "./components/commonItems/Card";
+import { LandingPages } from "./components/homePage/LandingPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navber/>
         <HeroUIProvider>
-          <Navber />
-          <ToggleNav />
-          <LinksItem />
-          <HeadingOne/>
-          <Cards/>
+          <Routes>
+            <Route path="/" element = {<LandingPages/>}/>
+          </Routes>
         </HeroUIProvider>
       </BrowserRouter>
     </>

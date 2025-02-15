@@ -13,8 +13,8 @@ export const Navber = () => {
   }
   return (
     <>
-      <Contain className={"relative px-2"}>
-        <div className="flex items-center justify-between py-4 pt-6 font-roboto px-3 lg:px-2 2xl:px-1 fixed  w-[100%] 2xl:w-[1420px]  mx-auto">
+      <Contain className={"relative md:px-0"}>
+        <div className="flex items-center justify-between py-4 pt-6 font-roboto px-3 lg:px-2 2xl:px-1 fixed  w-[100%] 2xl:w-[1440px]  mx-auto z-20 bg-white rounded-lg">
           <img src="/homePageImage/Logo.png" alt=""  className="cursor-pointer"/>
           <div className="py-1 pl-3 pr-1 rounded-full hidden lg:flex ml-2 md:text-base text-xs lg:w-[40%] items-center justify-between border border-[#ADADAD]">
             <input
