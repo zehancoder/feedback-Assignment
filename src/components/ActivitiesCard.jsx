@@ -133,8 +133,8 @@ export const Activities = () => {
                     <p className="text-xs mt-5 md:text-[14px] font-[400] font-roboto text-[#5E5E5E]">{text}</p>
                     <p className="text-xs mt-8 md:text-[14px] font-[400] font-roboto text-[#5E5E5E]">{textTwo}</p>
                     <div className="flex items-center mt-12 gap-2">
-                        {images.map((val)=> (
-                            <img src={val} className="w-[75px] sm:w-auto"></img>
+                        {images.map((val, i)=> (
+                            <img key={i} src={val} className="w-[75px] sm:w-auto"></img>
                         ))}
                     </div>
                   </div>

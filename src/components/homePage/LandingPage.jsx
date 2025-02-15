@@ -11,6 +11,7 @@ import { HeadingOne } from "../commonItems/Title";
 import { Button } from "@heroui/react";
 import { NavLink } from "react-router-dom";
 import { Activities } from "../ActivitiesCard";
+import { FooterItem } from "../commonItems/Footer";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -131,7 +132,7 @@ export const LandingPages = () => {
             <div className="flex flex-wrap items-center justify-between gap-4">
               {myData.trendsCard.map(
                 ({ img, heading, text, stars, rating, review }, i) => (
-                  <Cards
+                  <Cards key={i}
                     className={"mx-auto mt-4"}
                     img={img}
                     heading={heading}
@@ -181,6 +182,7 @@ export const LandingPages = () => {
           </div>
         </div>
         <Activities/>
+        <FooterItem/>
       </div>
     </>
   );
