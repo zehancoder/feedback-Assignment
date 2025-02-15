@@ -1,10 +1,16 @@
 import './App.css'
+import { Navber } from './components/commonItems/Navber'
+import {HeroUIProvider} from "@heroui/react";
+import { ToggleNav } from './components/commonItems/NavToggle';
 
 function App() {
 
   return (
     <>
-      <img src="/homePageImage/icons/Vector.svg" alt="" />
+      <HeroUIProvider>
+        <Navber/>
+        <ToggleNav/>
+      </HeroUIProvider>
     </>
   )
 }
