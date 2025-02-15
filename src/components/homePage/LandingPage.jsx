@@ -8,6 +8,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { HeadingOne } from "../commonItems/Title";
+import { Button } from "@heroui/react";
+import { NavLink } from "react-router-dom";
+import { Activities } from "../ActivitiesCard";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -108,7 +111,7 @@ export const LandingPages = () => {
             <Slider {...settings} className="flex items-center justify-center ">
               {myData.CaruselCard.map(
                 ({ img, heading, text, stars, rating, review }, i) => (
-                  <Cards
+                  <Cards key={i}
                     className={"mx-auto"}
                     img={img}
                     heading={heading}
@@ -122,11 +125,11 @@ export const LandingPages = () => {
             </Slider>
           </div>
         </Contain>
-        <Contain>
+        <Contain className={"py-8 pb-14"}>
           <div className="mt-3">
-            <HeadingOne>The latest trends</HeadingOne>
+            <HeadingOne className={"mb-2"}>The latest trends</HeadingOne>
             <div className="flex flex-wrap items-center justify-between gap-4">
-            {myData.trendsCard.map(
+              {myData.trendsCard.map(
                 ({ img, heading, text, stars, rating, review }, i) => (
                   <Cards
                     className={"mx-auto mt-4"}
@@ -140,8 +143,44 @@ export const LandingPages = () => {
                 )
               )}
             </div>
+            <h1 className="font-lexend text-lg md:text-xl lg:text-2xl mt-16 text-center font-[400] text-darkBlack">
+              Discover more cool restaurants
+            </h1>
+            <div className="w-full flex items-center justify-center mt-6">
+              <NavLink to="/allResturents">
+                <Button className="bg-normalBlue text-white font-roboto leading-[22.27px] font-[400] rounded-[23.5px] px-8 py-6 text-[14px] cursor-pointer md:text-[16px]">
+                  Show More
+                </Button>
+              </NavLink>
+            </div>
           </div>
         </Contain>
+        <div className="py-14">
+          <div className="bg-normalGray py-6 ">
+            <Contain className="px-4">
+              <div className="grid grid-cols-12">
+                <div className="lg:col-span-6 col-span-12 px-5  md:pl-14 lg:pl-20">
+                  <h1 className="text-lg md:text-xl mt-12 font-extrabold leading-[32.5px] text-darkBlack font-lexend lg:text-2xl">
+                    MyFeedback for Business has <br /> resources to help you
+                    plan, start, <br /> grow, and advertise your small <br />{" "}
+                    business
+                  </h1>
+                  <p className="text-xs mt-4 md:mt-6 md:text-[14px] font-[400] font-roboto text-[#5E5E5E]">
+                    The lorem ipsum is, in printing, a series of meaningless
+                    words <br /> used temporarily to calibrate a layout.
+                  </p>
+                  <Button className="text-white mt-8 md:mt-14 text-xs lg:text-[15.5px] leading-[18.16px] bg-darkBlack rounded-full cursor-pointer py-3 lg:py-6 px-4 lg:px-8 tracking-wider">
+                    Explore MyFeedback business
+                  </Button>
+                </div>
+                <div className="lg:col-span-6 col-span-12 px-5 lg:mt-0 mt-12">
+                  <img src="/homePageImage/appertMent.png" alt="" />
+                </div>
+              </div>
+            </Contain>
+          </div>
+        </div>
+        <Activities/>
       </div>
     </>
   );

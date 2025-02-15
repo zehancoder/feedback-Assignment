@@ -227,70 +227,133 @@
   ],
   "activitiesCard": [
     {
-        "userImg": "/icons/user.png",
-        "name": "Leslie sakho",
-        "location": "Canada, toronto",
-        "stars": "/homePageImage/stars/stars(3).png",
-        "date": "09/11/2023",
-        "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
-        "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
-        "images": [
-            "/homePageImage/activityImages/ac1.png",
-            "/homePageImage/activityImages/ac2.png",
-            "/homePageImage/activityImages/ac3.png"
-        ],
-        "discover": "Discover"
+      "userImg": "/icons/user.png",
+      "name": "Leslie sakho",
+      "location": "Canada, toronto",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "09/11/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac1.png",
+        "/homePageImage/activityImages/ac2.png",
+        "/homePageImage/activityImages/ac3.png"
+      ],
+      "discover": "Discover"
     },
     {
-        "userImg": "/icons/user.png",
-        "name": "Chris macari",
-        "location": "Singapour",
-        "stars": "/homePageImage/stars/stars(3).png",
-        "date": "14/09/2023",
-        "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
-        "textTwo": "The lorem ipsum is, in printing.",
-        "images": [
-            "/homePageImage/activityImages/ac4.png",
-            "/homePageImage/activityImages/ac5.png",
-            "/homePageImage/activityImages/ac6.png"
-        ],
-        "discover": "Discover"
+      "userImg": "/icons/user.png",
+      "name": "Chris macari",
+      "location": "Singapour",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "14/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing.",
+      "images": [
+        "/homePageImage/activityImages/ac4.png",
+        "/homePageImage/activityImages/ac5.png",
+        "/homePageImage/activityImages/ac6.png"
+      ],
+      "discover": "Discover"
     },
     {
-        "userImg": "/icons/user.png",
-        "name": "Jojo alba",
-        "location": "Kuala lumpur",
-        "stars": "/homePageImage/stars/stars(3).png",
-        "date": "28/09/2023",
-        "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
-        "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
-        "images": [
-            "/homePageImage/activityImages/ac7.png",
-            "/homePageImage/activityImages/ac8.png",
-            "/homePageImage/activityImages/ac9.png"
-        ],
-        "discover": "Discover"
+      "userImg": "/icons/user.png",
+      "name": "Jojo alba",
+      "location": "Kuala lumpur",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Chris macari",
+      "location": "Singapour",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "14/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing.",
+      "images": [
+        "/homePageImage/activityImages/ac4.png",
+        "/homePageImage/activityImages/ac5.png",
+        "/homePageImage/activityImages/ac6.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Jojo alba",
+      "location": "Kuala lumpur",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Jojo alba",
+      "location": "Kuala lumpur",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Jojo alba",
+      "location": "Kuala lumpur",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "textTwo": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
     }
   ],
   "footer": [
     {
-        "about": [
-            "About MyFeedback",
-            "Investor Relations"
-        ]
+      "about": ["About MyFeedback", "Investor Relations"]
     },
     {
-        "myFeedback": [
-            "MyFeedback for business",
-            "Collections",
-            "Task",
-            "Events",
-            "MyFeedback blog",
-            "Support",
-            "Developers"
-        ],
-        "langauges": ["English", "Bangla", "Spanish", "Arabic", "Turkie"],
-        "Countries": ["Bangladesh", "Pakistan", "Turkey", "Saudi Arabia", "America"]
+      "myFeedback": [
+        "MyFeedback for business",
+        "Collections",
+        "Task",
+        "Events",
+        "MyFeedback blog",
+        "Support",
+        "Developers"
+      ],
+      "langauges": ["English", "Bangla", "Spanish", "Arabic", "Turkie"],
+      "Countries": [
+        "Bangladesh",
+        "Pakistan",
+        "Turkey",
+        "Saudi Arabia",
+        "America"
+      ]
     }
   ]
 }
