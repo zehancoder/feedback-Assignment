@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HeadingOne } from "./components/commonItems/Title";
 import { Cards } from "./components/commonItems/Card";
 import { LandingPages } from "./components/homePage/LandingPage";
+import { AllResturents } from "./components/AllResturents";
+import { BellaItaliaItem } from "./components/BellaItalia";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <HeroUIProvider>
           <Routes>
             <Route path="/" element = {<LandingPages/>}/>
+            <Route path="/allResturents" element = {<AllResturents/>}/>
+            <Route path="/BellaItalia" element = {<BellaItaliaItem/>}/>
           </Routes>
         </HeroUIProvider>
       </BrowserRouter>

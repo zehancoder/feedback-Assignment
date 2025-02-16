@@ -131,7 +131,7 @@ export const LandingPages = () => {
             <HeadingOne className={"mb-2"}>The latest trends</HeadingOne>
             <div className="flex flex-wrap items-center justify-between gap-4">
               {myData.trendsCard.map(
-                ({ img, heading, text, stars, rating, review }, i) => (
+                ({ img, heading, text, stars, rating, review , }, i) => (
                   <Cards key={i}
                     className={"mx-auto mt-4"}
                     img={img}
@@ -140,6 +140,7 @@ export const LandingPages = () => {
                     stars={stars}
                     rating={rating}
                     review={review}
+                    animateText={"View All"}
                   ></Cards>
                 )
               )}

@@ -3,38 +3,65 @@ import { TbWorld } from "react-icons/tb";
 import { Button } from "@heroui/react";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import myData from "../../dataBase/Data.json"
+import { useState } from "react";
+import myData from "../../dataBase/Data.json";
 
-export const ToggleNav = ({menuOpen, setMenuOpen}) => {
-    const menuClose = () => {
-        setMenuOpen (!menuOpen)
-    }
+export const ToggleNav = ({ menuOpen, setMenuOpen }) => {
+  const menuClose = () => {
+    setMenuOpen(!menuOpen);
+  };
+  const [changeIcon, setChangeIcon] = useState("");
+  const changeSearchIcon = (e) => {
+    setChangeIcon(e.target.value);
+  };
+  const finishSearch = () => {
+    setChangeIcon("");
+  };
   return (
     <>
-      <div className={`fixed font-roboto z-30 top-0 h-full transition-all duration-200  ${menuOpen ? `left-0` : `-left-[200%]`}`}>
+      <div
+        className={`fixed font-roboto z-30 top-0 h-full transition-all duration-200  ${
+          menuOpen ? `left-0` : `-left-[200%]`
+        }`}
+      >
         <div className="max-w-96 h-full bg-normalBlack opacity-85 relative p-4 py-12">
-        <div className=" px-2 flex items-center justify-between flex-wrap gap-3 font-roboto">
-          {myData.navberTwo.map(({Text, img, link}, i) => (
-            <NavLink key={i} to={link} className={"text-center text-white py-2 font-medium space-y-2"} onClick={menuClose}>
-                <img src={img} alt="" className="mx-auto w-5"/>
+          <div className=" px-2 flex items-center justify-between flex-wrap gap-3 font-roboto">
+            {myData.navberTwo.map(({ Text, img, link }, i) => (
+              <NavLink
+                key={i}
+                to={link}
+                className={"text-center text-white py-2 font-medium space-y-2"}
+                onClick={menuClose}
+              >
+                <img src={img} alt="" className="mx-auto w-5" />
                 <p className="">{Text}</p>
-            </NavLink>
-          ))}
-        </div>
+              </NavLink>
+            ))}
+          </div>
           <div className="py-1 pl-3  pr-1 flex flex-col items-center justify-center ml-2 md:text-base text-[14px] mt-6">
             <input
               className="w-[100%] border border-white text-white py-3 rounded-full px-3 outline-none"
               type="text"
               placeholder="restaurant, hotel, service...."
-            />
+            onChange={changeSearchIcon} value={changeIcon}/>
             <div className="flex w-full gap-3 items-center justify-center border border-white rounded-full px-1 py-1 mt-4">
               <input
                 className="w-full  px-3 outline-none text-white"
                 type="text"
                 placeholder="Singapour..."
               />
-              <div className="h-9 flex items-center justify-center rounded-full w-13 bg-white text-normalBlue transition cursor-pointer font-bold hover:opacity-95">
-                <IoSearch className="font-bold text-lg" />
+              <div className="h-10 flex items-center justify-center rounded-full w-12 bg-normalBlue transition cursor-pointer text-white font-bold hover:opacity-95">
+                <IoSearch
+                  className={`font-bold text-lg ${
+                    changeIcon.length == 0 ? `block` : `hidden`
+                  }`}
+                />
+                <IoClose
+                  className={`font-bold text-lg ${
+                    changeIcon.length >= 1 ? `block` : `hidden`
+                  }`}
+                  onClick={finishSearch}
+                />
               </div>
             </div>
           </div>
@@ -44,7 +71,10 @@ export const ToggleNav = ({menuOpen, setMenuOpen}) => {
               MyFeedback for business
             </Button>
           </div>
-          <IoClose className="absolute cursor-pointer right-5 top-5 text-2xl text-white" onClick={menuClose}/>
+          <IoClose
+            className="absolute cursor-pointer right-5 top-5 text-2xl text-white"
+            onClick={menuClose}
+          />
         </div>
       </div>
     </>

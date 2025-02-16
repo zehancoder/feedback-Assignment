@@ -3,7 +3,7 @@
     {
       "img": "/homePageImage/icons/All.png",
       "Text": "All",
-      "link": "/All"
+      "link": "/allResturents"
     },
     {
       "img": "/homePageImage/icons/Resturents.png",
