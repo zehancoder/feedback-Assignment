@@ -12,6 +12,7 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaTiktok } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Rating } from "./Rating";
+import { Feedback } from "./Allfeedback";
 
 export const BellaItaliaItem = () => {
   let [showImg, setShowImg] = useState(false);
@@ -156,6 +157,8 @@ export const BellaItaliaItem = () => {
           </div>
           {/* Rating Item */}
           <Rating/>
+          {/* Freedback Item */}
+          <Feedback/>
         </Contain>
       </div>
     </>

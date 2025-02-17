@@ -377,5 +377,105 @@
       "img": "/BellaItalia/icons/icons(1).png",
       "text": "www.bellaitalia.com"
     }
+  ],
+  "FeedbackCard": [
+    {
+      "userImg": "/icons/user.png",
+      "name": "Leslie sakho",
+      "location": "Canada, toronto",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "09/11/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac1.png",
+        "/homePageImage/activityImages/ac2.png",
+        "/homePageImage/activityImages/ac3.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Mei Ling",
+      "location": "Singapore, Orchad boulevard",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "14/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac4.png",
+        "/homePageImage/activityImages/ac5.png",
+        "/homePageImage/activityImages/ac6.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Wei Xiong",
+      "location": "Singapore, Takashimaya",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Ming Wei",
+      "location": "Singapore, Little india",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "14/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac4.png",
+        "/homePageImage/activityImages/ac5.png",
+        "/homePageImage/activityImages/ac6.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Jojo alba",
+      "location": "Kuala lumpur",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "Xin Yi",
+      "location": "Singapore, Zen rooms",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    },
+    {
+      "userImg": "/icons/user.png",
+      "name": "JZhi Hao",
+      "location": "Singapore, Boon Keng",
+      "stars": "/homePageImage/stars/stars(3).png",
+      "date": "28/09/2023",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "images": [
+        "/homePageImage/activityImages/ac7.png",
+        "/homePageImage/activityImages/ac8.png",
+        "/homePageImage/activityImages/ac9.png"
+      ],
+      "discover": "Discover"
+    }
   ]
 }
