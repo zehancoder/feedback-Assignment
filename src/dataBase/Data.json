@@ -477,5 +477,32 @@
       ],
       "discover": "Discover"
     }
+  ],
+  "DiscoverItem": [
+    {
+      "img": "/BellaItalia/Discover/discover (3).png",
+      "heading": "The melt",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/BellaItalia/blueStar.png",
+      "rating": "4.8",
+      "review": "(34 reviews)"
+    },
+    {
+      "img": "/BellaItalia/Discover/discover (2).png",
+      "heading": "Lokma",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "5.0",
+      "review": "(253 reviews)"
+    },
+    {
+      "img": "/BellaItalia/Discover/discover (1).png",
+      "heading": "The snug",
+      "text": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+      "stars": "/homePageImage/stars/stars(1).png",
+      "rating": "4.5",
+      "review": "(654 reviews)"
+    }
+
   ]
 }

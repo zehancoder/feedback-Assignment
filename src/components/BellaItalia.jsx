@@ -13,6 +13,7 @@ import { FaTiktok } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { Rating } from "./Rating";
 import { Feedback } from "./Allfeedback";
+import { FooterItem } from "./commonItems/Footer";
 
 export const BellaItaliaItem = () => {
   let [showImg, setShowImg] = useState(false);
@@ -159,7 +160,10 @@ export const BellaItaliaItem = () => {
           <Rating/>
           {/* Freedback Item */}
           <Feedback/>
+
         </Contain>
+        {/* Footer */}
+        <FooterItem/>
       </div>
     </>
   );
