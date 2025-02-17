@@ -1,11 +1,16 @@
 import { Contain } from "./commonItems/Container";
 import { Link } from "react-router-dom";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { MdWatchLater } from "react-icons/md";
 import { HeadingTwo } from "./commonItems/Title";
 import { Button } from "@heroui/react";
 import { useState } from "react";
 import { ViewAll } from "./ViewAllImg";
+import myData from "../dataBase/Data.json"
+import { FaFacebook } from "react-icons/fa";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { FaTiktok } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export const BellaItaliaItem = () => {
   let [showImg, setShowImg] = useState(false);
@@ -19,16 +24,16 @@ export const BellaItaliaItem = () => {
         className={`${
           showImg ? `backdrop-brightness-50` : `backdrop-brightness-100`
         }`}
-        onClick={showAllImg}
+        onClick={() => setShowImg(false)}
       >
         <Contain>
           <h3 className="text-lg md:text-xl font-bold font-roboto">
             <Link to="/">Home</Link> / BellaItalia
           </h3>
         </Contain>
-        <div className="pb-16">
+        <div className="pb-16 max-w-[1650px] mx-auto">
           <div
-            className={`"max-w-[1600px] relative bg-cover px-3 mx-auto mt-3 pb-24 bg-[url(/homePageImage/BellaPage.png)] py-16 " ${
+            className={`" relative bg-cover px-3 mx-auto mt-3 pb-24 bg-[url(/homePageImage/BellaPage.png)] py-16 " ${
               showImg ? `blur-md` : `blur-none`
             }`}
           >
@@ -79,10 +84,10 @@ export const BellaItaliaItem = () => {
           >
             <ViewAll
               className={`absolute top-0 left-[50%] transform -translate-x-[50%] z-10`}
-            />
+            setShowImg={setShowImg}/>
           </div>
 
-          <div className={`${showImg ? `blur-md` : `blur-none`}`}>
+          <div className={`${showImg ? `blur-md` : `blur-none`} px-3`}>
             <HeadingTwo>Discover our magnificent place in photos</HeadingTwo>
             <p className="text-[14px] font-roboto md:text-[16px] text-[#5E5E5E] mt-6 leading-[18.75px]">
               The lorem ipsum is, in printing, a series of meaningless words
@@ -102,7 +107,7 @@ export const BellaItaliaItem = () => {
                     onClick={showAllImg}
                   >
                     <img
-                      src="/BellaItalia/viewIcon.png"
+                      src="/BellaItalia/icons/viewIcons.png"
                       className="w-4 md:w-auto"
                       alt=""
                     />
@@ -125,8 +130,28 @@ export const BellaItaliaItem = () => {
             </div>
           </div>
           {/* more informaiton */}
-          <div className="py-8">
-
+          <div className="py-12 flex lg:flex-row flex-col items-center mt-8 px-3">
+            <div className="w-full lg:w-[50%] ">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-lexend">More informations</h1>
+              <div className="mt-8">
+                {myData.moreInformation.map(({img, text}, i) => (
+                  <div key={i} className="flex gap-3 md:gap-4 py-3">
+                    <img src={img} alt="" />
+                    <p className="text-[14px] text-[#232323] md:text-[17px] font-roboto font-[400]">{text}</p>
+                  </div>
+                ))}
+              </div>
+              {/* socialIcons */}
+              <div className="flex items-center text-2xl md:text-[27px] mt-4 gap-4">
+                <FaFacebook className="cursor-pointer transition duration-200 transform hover:scale-105 hover:-translate-y-2"/>
+                <BiLogoInstagramAlt className="cursor-pointer transition duration-200 transform hover:scale-105 hover:-translate-y-2"/>
+                <FaTiktok className="cursor-pointer transition duration-200 transform hover:scale-105 hover:-translate-y-2"/>
+                <FaWhatsapp className="cursor-pointer transition duration-200 transform hover:scale-105 hover:-translate-y-2"/>
+              </div>
+            </div>
+            <div className="w-full lg:w-[50%] h-[360px]">
+                <img src="/BellaItalia/maps.png" alt="" />
+            </div>
           </div>
         </Contain>
       </div>

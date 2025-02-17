@@ -355,5 +355,27 @@
         "America"
       ]
     }
+  ],
+  "moreInformation": [
+    {
+      "img": "/BellaItalia/icons/icons(4).png",
+      "text": "See the menu"
+    },
+    {
+      "img": "/BellaItalia/icons/icons(5).png",
+      "text": "+847 87 37 29 01"
+    },
+    {
+      "img": "/BellaItalia/icons/icons(2).png",
+      "text": "Singapour, Bishan"
+    },
+    {
+      "img": "/BellaItalia/icons/icons(3).png",
+      "text": "7j/7, 08:00 - 22:00"
+    },
+    {
+      "img": "/BellaItalia/icons/icons(1).png",
+      "text": "www.bellaitalia.com"
+    }
   ]
 }

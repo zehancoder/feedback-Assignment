@@ -1,6 +1,7 @@
 import { cn } from "@heroui/react";
+import { MdClose } from "react-icons/md";
 
-export const ViewAll = ({ className, Click }) => {
+export const ViewAll = ({ className, setShowImg }) => {
   return (
     <div className={cn("", className)}>
       <div className="p-4 bg-[#F6F6F6]">
@@ -14,6 +15,9 @@ export const ViewAll = ({ className, Click }) => {
         </div>
         <div className="mt-4">
           <img src="/BellaItalia/viewImages/Groupe.png" alt="" />
+        </div> 
+        <div className="absolute -right-3 -top-3 p-2 text-xl font-bold bg-white rounded-full cursor-pointer" onClick={() => (setShowImg(false))}>
+          <MdClose/>
         </div>
       </div>
     </div>
