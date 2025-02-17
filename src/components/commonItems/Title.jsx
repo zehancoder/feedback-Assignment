@@ -7,3 +7,11 @@ export const HeadingOne = ({className, children}) => {
         </>
     )
 }
+
+export const HeadingTwo = ({className, children}) => {
+    return (
+        <>
+            <h1 className={cn("text-xl font-semibold font-lexend md:text-2xl lg:text-3xl text-darkBlack", className)}>{children}</h1>
+        </>
+    )
+}
