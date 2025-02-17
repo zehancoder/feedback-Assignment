@@ -22,9 +22,9 @@ export const Cards = ({
           <div className="relative">
             <img src={img} className="w-full bg-cover" alt="" />
             <div className="flex absolute gap-2 bottom-3 left-[50%] transform -translate-[50%]">
-              <div className="h-1 md:h-2 w-1 md:w-2 rounded-full bg-[#D9D9D9]"></div>
-              <div className="h-1 md:h-2 w-1 md:w-2 rounded-full bg-[#D9D9D9]"></div>
-              <div className="h-1 md:h-2 w-1 md:w-2 rounded-full bg-[#D9D9D9]"></div>
+              <div className="h-1 md:h-2 w-1 md:w-2 rounded-full cursor-pointer bg-[#D9D9D9]"></div>
+              <div className="h-1 md:h-2 w-1 md:w-2 rounded-full bg-[#D9D9D9] cursor-pointer"></div>
+              <div className="h-1 md:h-2 w-1 md:w-2 rounded-full bg-[#D9D9D9] cursor-pointer"></div>
             </div>
           </div>
         </div>

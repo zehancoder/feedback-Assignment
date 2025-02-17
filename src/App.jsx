@@ -20,6 +20,7 @@ function App() {
             <Route path="/" element = {<LandingPages/>}/>
             <Route path="/allResturents" element = {<AllResturents/>}/>
             <Route path="/BellaItalia" element = {<BellaItaliaItem/>}/>
+            
           </Routes>
         </HeroUIProvider>
       </BrowserRouter>

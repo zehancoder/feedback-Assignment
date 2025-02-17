@@ -5,22 +5,33 @@ import { MdWatchLater } from "react-icons/md";
 import { HeadingTwo } from "./commonItems/Title";
 import { Button } from "@heroui/react";
 import { useState } from "react";
+import { ViewAll } from "./ViewAllImg";
 
 export const BellaItaliaItem = () => {
   let [showImg, setShowImg] = useState(false);
   const showAllImg = () => {
-    setShowImg(!showImg)
-  }
+    setShowImg(!showImg);
+    console.log("hello");
+  };
   return (
     <>
-      <div>
+      <div
+        className={`${
+          showImg ? `backdrop-brightness-50` : `backdrop-brightness-100`
+        }`}
+        onClick={showAllImg}
+      >
         <Contain>
           <h3 className="text-lg md:text-xl font-bold font-roboto">
             <Link to="/">Home</Link> / BellaItalia
           </h3>
         </Contain>
         <div className="pb-16">
-          <div className="max-w-[1600px] relative bg-cover px-3 mx-auto mt-3 pb-24 bg-[url(/homePageImage/BellaPage.png)] py-16 ">
+          <div
+            className={`"max-w-[1600px] relative bg-cover px-3 mx-auto mt-3 pb-24 bg-[url(/homePageImage/BellaPage.png)] py-16 " ${
+              showImg ? `blur-md` : `blur-none`
+            }`}
+          >
             <div className="absolute top-0 left-0 h-full w-full md:w-[80%] lg:w-[50%]">
               <img src="/homePageImage/darkImg.png" className="h-full" alt="" />
             </div>
@@ -59,8 +70,19 @@ export const BellaItaliaItem = () => {
             </Contain>
           </div>
         </div>
-        <Contain className="py-14">
-          <div>
+        <Contain className="py-14 relative">
+          {/* viewing all images */}
+          <div
+            className={`transition-all duration-300 ${
+              showImg ? `block` : `hidden`
+            }`}
+          >
+            <ViewAll
+              className={`absolute top-0 left-[50%] transform -translate-x-[50%] z-10`}
+            />
+          </div>
+
+          <div className={`${showImg ? `blur-md` : `blur-none`}`}>
             <HeadingTwo>Discover our magnificent place in photos</HeadingTwo>
             <p className="text-[14px] font-roboto md:text-[16px] text-[#5E5E5E] mt-6 leading-[18.75px]">
               The lorem ipsum is, in printing, a series of meaningless words
@@ -74,8 +96,11 @@ export const BellaItaliaItem = () => {
                   className="w-full"
                   alt=""
                 />
-                <div onClick={showAllImg}>
-                  <Button className="flex cursor-pointer absolute bottom-12  md:bottom-20 lg:bottom-12 2xl:bottom-6 left-8 lg:left-16 2xl:left-16 p-2 px-2  md:px-4 py-1 md:py-3 bg-white rounded-full">
+                <div>
+                  <Button
+                    className="flex cursor-pointer absolute bottom-12  md:bottom-20 lg:bottom-12 2xl:bottom-6 left-8 lg:left-16 2xl:left-16 p-2 px-2  md:px-4 py-1 md:py-3 bg-white rounded-full"
+                    onClick={showAllImg}
+                  >
                     <img
                       src="/BellaItalia/viewIcon.png"
                       className="w-4 md:w-auto"
@@ -98,6 +123,10 @@ export const BellaItaliaItem = () => {
                 </div>
               </div>
             </div>
+          </div>
+          {/* more informaiton */}
+          <div className="py-8">
+
           </div>
         </Contain>
       </div>
