@@ -10,7 +10,7 @@ export const Rating = () => {
   return (
     <div>
       <Contain className="border-b border-t border-[#DCDCDC] py-12 px-3">
-        <div className="max-w-[80%] flex items-center gap-3">
+        <div className="xs:max-w-[80%] flex md:flex-row flex-col items-center gap-3">
           <div className="w-full lg:w-[50%]">
             <div className="flex gap-6 font-roboto">
               <img src="/BellaItalia/ratingShow.png" className="h-16" alt="" />
@@ -27,7 +27,7 @@ export const Rating = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[50%]">
+          <div className="w-full lg:w-[50%] xs:mt-0 mt-5">
             <div className="flex items-center gap-3">
               <p className="text-[15px] text-[#484848] font-roboto">5 stars</p>
               <div className="bg-[#2E95DF] w-[80%] py-1 rounded-full"></div>

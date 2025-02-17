@@ -14,6 +14,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { Rating } from "./Rating";
 import { Feedback } from "./Allfeedback";
 import { FooterItem } from "./commonItems/Footer";
+import { NotifyItem } from "./Notify";
 
 export const BellaItaliaItem = () => {
   let [showImg, setShowImg] = useState(false);
@@ -21,14 +22,27 @@ export const BellaItaliaItem = () => {
     setShowImg(!showImg);
     console.log("hello");
   };
+  let [notify, setNotify] = useState(false);
+   let times = setTimeout(() => {
+    setNotify(!notify)
+  }, 2000);
+  let [massege, setMassege] = useState(true)
+  massege ? "" : clearTimeout(times);
   return (
     <>
       <div
         className={`${
-          showImg ? `backdrop-brightness-50` : `backdrop-brightness-100`
+          showImg || notify ? `backdrop-brightness-50 ` : `backdrop-brightness-100`
         }`}
-        onClick={() => setShowImg(false)}
+        onClick={() => {
+          setShowImg(false)
+          setNotify(false)
+        }}
       >
+        {/* Notification Item */}
+        <NotifyItem className={`${notify ? `block` : `hidden`}`} setNotify={setNotify} setMassege={setMassege}/>
+        
+
         <Contain>
           <h3 className="text-lg md:text-xl font-bold font-roboto">
             <Link to="/">Home</Link> / BellaItalia
@@ -37,7 +51,7 @@ export const BellaItaliaItem = () => {
         <div className="pb-16 max-w-[1650px] mx-auto">
           <div
             className={`" relative bg-cover px-3 mx-auto mt-3 pb-24 bg-[url(/homePageImage/BellaPage.png)] py-16 " ${
-              showImg ? `blur-md` : `blur-none`
+              showImg || notify ? `blur-md` : `blur-none`
             }`}
           >
             <div className="absolute top-0 left-0 h-full w-full md:w-[80%] lg:w-[50%]">
@@ -90,7 +104,7 @@ export const BellaItaliaItem = () => {
             setShowImg={setShowImg}/>
           </div>
 
-          <div className={`${showImg ? `blur-md` : `blur-none`} px-3`}>
+          <div className={`${showImg || notify ? `blur-md` : `blur-none`}  px-3`}>
             <HeadingTwo>Discover our magnificent place in photos</HeadingTwo>
             <p className="text-[14px] font-roboto md:text-[16px] text-[#5E5E5E] mt-6 leading-[18.75px]">
               The lorem ipsum is, in printing, a series of meaningless words
@@ -133,7 +147,7 @@ export const BellaItaliaItem = () => {
             </div>
           </div>
           {/* more informaiton */}
-          <div className="py-12 flex lg:flex-row flex-col items-center mt-8 px-3">
+          <div className={`py-12 flex lg:flex-row flex-col items-center mt-8 px-3 ${showImg || notify ? `blur-md` : `blur-none`} `}>
             <div className="w-full lg:w-[50%] ">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-lexend">More informations</h1>
               <div className="mt-8 text-center">
@@ -157,7 +171,7 @@ export const BellaItaliaItem = () => {
             </div>
           </div>
           {/* Rating Item */}
-          <Rating/>
+          <Rating />
           {/* Freedback Item */}
           <Feedback/>
 
