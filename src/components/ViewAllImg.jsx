@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 
 export const ViewAll = ({ className, setShowImg }) => {
   return (
-    <div className={cn("", className)}>
+    <div className={cn("w-72 md:w-auto", className)}>
       <div className="p-4 bg-[#F6F6F6]">
         <div className="relative">
           <img src="/BellaItalia/viewImages/hotel1.png" alt="" />

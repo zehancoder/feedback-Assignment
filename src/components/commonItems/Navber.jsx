@@ -7,6 +7,12 @@ import { useState } from "react";
 import { ToggleNav } from "./NavToggle";
 import { Link } from "react-router-dom";
 
+const items = [
+  "Kakune restau, paris...",
+  "Kakunexy delux, rome...",
+  "Kakune, new york...",
+  "Kikune, Dakar plateau..."
+];
 export const Navber = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -19,6 +25,18 @@ export const Navber = () => {
   const finishSearch = () => {
     setChangeIcon("");
   };
+
+  const [query, setQuery] = useState("");
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleSelect = (value) => {
+    setSelectedValue(value);
+    setQuery("");
+  };
+
+  const filteredItems = query
+    ? items.filter((item) => item.toLowerCase().includes(query.toLowerCase()))
+    : [];
   return (
     <>
       <Contain className={"relative md:px-0"}>
@@ -31,13 +49,43 @@ export const Navber = () => {
             />
           </Link>
           <div className="py-1 pl-3 pr-1 rounded-full hidden lg:flex ml-2 md:text-base text-xs lg:w-[40%] items-center justify-between border border-[#ADADAD]">
-            <input
-              className="w-[50%] py-2 px-3 outline-none"
-              type="text"
-              placeholder="restaurant, hotel, service...."
-              onChange={changeSearchIcon}
-              value={changeIcon}
-            />
+            <div className="max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={selectedValue || query}
+                onChange={(e) => {
+                  setQuery(e.target.value)
+                  
+                }}
+                className="w-[50%] py-2 px-3 outline-none"
+              />
+              <div>
+                {query && (
+                  <ul className="mt-4 px-3  border-b border-[#969696] bg-white w-96 rounded-md divide-y absolute">
+                    {filteredItems.length > 0 ? (
+                      filteredItems.map((item, index) => (
+                        <Link
+                          to="/BellaItalia"
+                          className="flex py-2 hover:bg-gray-100 w-full rounded-md cursor-pointer"
+                        >
+                          <img src="/search.png" alt="" />
+                          <li
+                            key={index}
+                            className="p-2  cursor-pointer"
+                            onClick={() => handleSelect(item)} 
+                          >
+                            {item}
+                          </li>
+                        </Link>
+                      ))
+                    ) : (
+                      <li className="p-2 text-gray-500">No results found</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+            </div>
             <div className="h-6 w-0.5 rounded-full bg-[#7A7A7A]"></div>
             <input
               className="w-[50%] py-2 px-3 outline-none"
