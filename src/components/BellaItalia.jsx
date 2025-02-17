@@ -11,6 +11,7 @@ import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaTiktok } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { Rating } from "./Rating";
 
 export const BellaItaliaItem = () => {
   let [showImg, setShowImg] = useState(false);
@@ -133,9 +134,9 @@ export const BellaItaliaItem = () => {
           <div className="py-12 flex lg:flex-row flex-col items-center mt-8 px-3">
             <div className="w-full lg:w-[50%] ">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-lexend">More informations</h1>
-              <div className="mt-8">
+              <div className="mt-8 text-center">
                 {myData.moreInformation.map(({img, text}, i) => (
-                  <div key={i} className="flex gap-3 md:gap-4 py-3">
+                  <div key={i} className="flex gap-3 md:gap-4 py-3 ">
                     <img src={img} alt="" />
                     <p className="text-[14px] text-[#232323] md:text-[17px] font-roboto font-[400]">{text}</p>
                   </div>
@@ -149,10 +150,12 @@ export const BellaItaliaItem = () => {
                 <FaWhatsapp className="cursor-pointer transition duration-200 transform hover:scale-105 hover:-translate-y-2"/>
               </div>
             </div>
-            <div className="w-full lg:w-[50%] h-[360px]">
-                <img src="/BellaItalia/maps.png" alt="" />
+            <div className="w-full lg:w-[50%] lg:mt-0 mt-8">
+                <img src="/BellaItalia/maps.png" className="mx-auto lg:mx-0" alt="" />
             </div>
           </div>
+          {/* Rating Item */}
+          <Rating/>
         </Contain>
       </div>
     </>
